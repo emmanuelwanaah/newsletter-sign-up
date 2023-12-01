@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+   box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+   
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+   padding:1rem 5rem;
+    align-items: center;
+}
+ul{
+    display: flex;
+    gap: 2rem;
+    
+}
+li{
+    list-style: none;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #010131;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+a:hover{
+    text-decoration: none;
+    font-size: 18px;
+    color: #ff3b3b;
+}
+.logo{
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #ff6347;
+    cursor: pointer;
+}
+.logo span{
+    color: #010131;
+}
+
+.left h1{
+    font-size: 3rem;
+    position: relative;
+    margin-bottom: 1.5rem;
+    color: #000041;
+}
+p{
+    font-size:0.9rem;
+    color: #000041;
+   
+}
+.left .word{
+    margin-bottom: 3rem;
+    
+}
+.left .message{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  
+}
+.message img{
+    filter: drop-shadow(1px 1px 3px #000041);
+    -webkit-filter: drop-shadow(1px 1px 3px #000041);
+}
+.action{
+    margin-top: 1rem;
+}
+.action p{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+input{
+
+   width: 320px;
+   height: 35px;
+   
+}
+
+button{
+    margin-top: 1rem;
+    width: 320px;
+    height: 35px;
+    background: #000041;
+    color: #fff;
+    font-size: 0.9rem;
+    border: none;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+button:hover{
+    
+    background: linear-gradient(45deg,#ff1188,#ffa500,#ff4500);
+
+   
+}
+#userEmail{
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+/* .form{
+    display:grid;
+} */
+.success{
+    display: flex;
+align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+}
+.valid{
+    display: flex;
+    gap: 6rem;
+}
+#ValidationMessage{
+    color: #ff4500;
+    font-weight: normal;
+}
+@media (max-width:986px) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        justify-content: center;
+        align-items: center;
+        place-items: center;
+        gap: 2rem;
+       
+    }
+    .right img{
+        content: url(assets/images/illustration-sign-up-mobile.svg);
+    }
+    .left{
+        grid-row: 2
+    }
+    .left{
+        order: 2;
+    }
+
+}
+@media (max-width:600px) {
+    nav{
+        display: none;
+    }
+    .left button{
+      margin-bottom: 10rem;
+    }
+ 
+    .left h1{
+        font-size: 3rem;
+        position: relative;
+        margin-bottom: 1.5rem;
+        color: #000041;
+    }
+    p{
+        font-size:1rem;
+        color: #000041;
+       
+       
+    }
+   
+    .left .word{
+        margin-bottom: 2rem;
+        margin-left: 20px;
+        
+    }
+    .left .message{
+        display: flex;
+        gap: 1rem;
+        margin-top: 0.5rem;
+        margin-left: 15px;
+       
+      
+    }
+    .message img{
+        filter: drop-shadow(1px 1px 3px #000041);
+        -webkit-filter: drop-shadow(1px 1px 3px #000041);
+    }
+    .action{
+        margin-top: 0.8rem;
+    }
+    .action{
+        margin-left: 15px;
+    }
+    .success{
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+        margin-left: 1.5rem;
+    }
+    .success button{
+        margin-top: 10rem;
+        text-align: center;
+    }
+}
